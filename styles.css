@@ -1,0 +1,25 @@
+h1 {
+  background-color: #ff0000;
+}
+
+h2 {
+  background-color: #0000FF;
+}
+
+h3 {
+  background-color: #00FF00;
+}
+
+em {
+  background-color: #000000;
+  color: #ffffff;
+}
+function displaySum() {
+  let firstNum = Number(document.getElementById('firstNum').innerHTML)
+  let secondNum = Number(document.getElementById('secondNum').innerHTML)
+
+  let total = firstNum + secondNum;
+  document.getElementById("answer").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
+}
+
+document.getElementById('sumButton').addEventListener("click", displaySum);
